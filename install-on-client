@@ -1,5 +1,5 @@
 #!/bin/sh
-host=https://github.com/nisshiee/Git-Hooks
+host=https://raw.github.com/nisshiee/Git-Hooks
 if [[ $(git rev-parse --is-bare-repository) == true ]]; then
     echo "please run on your working tree"
     exit 1
@@ -8,6 +8,6 @@ fi
 cd $(git rev-parse --show-toplevel)
 for i in common.sh commit-msg pre-commit; do
     echo $i
-    curl -o -k .git/hooks/$i $host/raw/master/$i
+    curl -o -k .git/hooks/$i $host/master/$i
     chmod a+x .git/hooks/$i
 done

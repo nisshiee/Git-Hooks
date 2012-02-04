@@ -106,9 +106,9 @@ Redmine固定とかその他いろいろなところで微妙な部分が多い�
 全自動は無理っぽいですけど・・・
 
 クライアント側
-  $ curl https://github.com/bleis-tift/Git-Hooks/raw/master/install-on-client | sh
+  $ curl -k https://raw.github.com/nisshiee/Git-Hooks/master/install-on-client | bash
 
-サーバ側
+サーバ側(※手つけてないｗ)
   $ curl https://github.com/bleis-tift/Git-Hooks/raw/master/install-on-server | sh
 
 # ライセンス
